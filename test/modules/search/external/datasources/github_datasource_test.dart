@@ -5,7 +5,6 @@ import 'package:clean_architecture_study/modules/search/external/datasources/git
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-
 import '../../utils/github_response.dart';
 
 class DioMock extends Mock implements Dio {}
