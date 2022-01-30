@@ -3,29 +3,29 @@ import 'package:clean_architecture_study/modules/search/domain/entities/result_s
 
 class ResultSearchModel extends ResultSearch {
   final String title;
-  final String content;
+  final int id;
   final String image;
 
   ResultSearchModel({
     this.title,
-    this.content,
+    this.id,
     this.image,
   });
 
   Map<String, dynamic> toMap() {
     return {
-      'title': this.title,
-      'content': this.content,
-      'image': this.image,
+      'login': this.title,
+      'id': this.id,
+      'avatar_url': this.image,
     };
   }
 
   static ResultSearchModel fromMap(Map<String, dynamic> map) {
     if(map == null) return null;
     return ResultSearchModel(
-      title: map['title'] as String,
-      content: map['content'] as String,
-      image: map['image'] as String,
+      title: map['login'] as String,
+      id: map['id'] as int,
+      image: map['avatar_url'] as String,
     );
   }
 

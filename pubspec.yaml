@@ -13,6 +13,8 @@ dependencies:
   dartz: ^0.10.1
   dio: ^4.0.4
   flutter_modular: ^4.4.0
+  bloc: ^6.0.1
+  rxdart: ^0.24.1
 
 dev_dependencies:
   flutter_test:

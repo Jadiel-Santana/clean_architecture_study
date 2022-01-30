@@ -1,11 +1,11 @@
 class ResultSearch {
   final String title;
-  final String content;
+  final int id;
   final String image;
 
   ResultSearch({
     this.title,
-    this.content,
+    this.id,
     this.image,
   });
 }
